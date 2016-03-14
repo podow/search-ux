@@ -15,7 +15,7 @@ if (window.getSelection){
 	setInterval(function () {
 		query = window.getSelection().toString();
 		inputSearch.value = query;
-	}, 100);
+	}, 10);
 	btnSearch.addEventListener('click', function () {
 		window.open('https://www.google.com/search?q='+query+'&oq='+query+'&sourceid=chrome&ie=UTF-8&gws_rd=ssl');
 	});
@@ -23,7 +23,7 @@ if (window.getSelection){
 	setInterval(function () {
 		query = document.selection.createRange().text;
 		inputSearch.value = query;
-	}, 100);
+	}, 10);
 	btnSearch.addEventListener('click', function () {
 		window.open('https://www.google.com/search?q='+query+'&oq='+query+'&sourceid=chrome&ie=UTF-8&gws_rd=ssl');
 	});
