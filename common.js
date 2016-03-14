@@ -17,7 +17,7 @@ if (window.getSelection){
 		inputSearch.value = query;
 	}, 100);
 	btnSearch.addEventListener('click', function () {
-		window.open('http://ru.wikipedia.org/wiki/' + query);
+		window.open('https://www.google.com/search?q='+query+'&oq='+query+'&sourceid=chrome&ie=UTF-8&gws_rd=ssl');
 	});
 } else if (document.selection){
 	setInterval(function () {
@@ -25,6 +25,6 @@ if (window.getSelection){
 		inputSearch.value = query;
 	}, 100);
 	btnSearch.addEventListener('click', function () {
-		window.open('http://ru.wikipedia.org/wiki/' + query);
+		window.open('https://www.google.com/search?q='+query+'&oq='+query+'&sourceid=chrome&ie=UTF-8&gws_rd=ssl');
 	});
 }
